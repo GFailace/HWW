@@ -53,7 +53,7 @@ header button:hover{
 }
 header .buttons{
     display: flex;
-    margin-left: 45%;
+    margin-left: 55%;
     width: 100%;    
 }
 header .buttons button{
@@ -205,7 +205,7 @@ header nav a:hover{
     background: white;
     text-align: center;
     margin: 80px auto;
-    width: 40%;
+    width: 35%;
     height: 300px;
     padding: 40px;
     border-bottom: 6px solid #fed51b;
