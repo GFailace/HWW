@@ -21,9 +21,10 @@ html, body{
 }
 header{
     display: flex;
-    position: fixed;
+    position: relative;
     height: 110px;
     width: 100%;
+    margin: 0 auto;
     background: #fed51b;
     align-items: center;
     z-index: 1;
@@ -76,6 +77,7 @@ header nav{
     display: flex;
     justify-content: center;
     align-content: center;
+    z-index: 1;
 }
 header nav a{    
     margin: 15px 65px;
@@ -174,22 +176,36 @@ header nav a:hover{
     to {opacity: 1}
   }
 
+  .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }  
+  .active, .dot2:hover {
+    background-color: #fed51b;
+  }
+  .slide2 {
+    display: none;
+  }
+
 .blocks{
+    position: relative;
     display: flex;
     background: #dcdcdc;
-    padding: 0 5%;
-}
-.blocksDots img{
-    width: 64px;
-    background: transparent;
-    margin-top: 650%;
-    margin-left: -10%; 
+    padding: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 .block{    
     background: white;
     text-align: center;
-    margin: 80px 40px;
-    width: 500px;
+    margin: 80px auto;
+    width: 40%;
     height: 300px;
     padding: 40px;
     border-bottom: 6px solid #fed51b;
@@ -234,17 +250,14 @@ footer{
     header .buttons button{
         display: none;
     }
-    .block{
-        display: flexbox;
-    }
     header h1{
         text-align: center;
-        margin: 0 14%;
+        margin: 0 30%;
         padding: 10px 40px;
         font-size: 28px;
     }
     .slider{
-        margin-top: 110px;
+        margin-top: 0px;
       }
       .text {
         text-align: center;
@@ -260,6 +273,113 @@ footer{
         margin: 0 auto;
         border-radius: 25px;
         font-size: 14px;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 45px;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
+    }
+    .block button{
+        width: 200px;
+        height: 50px;
+        background: #fed51b;
+        color: #1081e0;
+        border: none;
+        border-radius: 25px;
+        margin: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 40px 20px;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
+    }
+}
+@media(max-width:700px){
+    header h1{
+        text-align: center;
+        margin: 0 30%;
+        padding: 10px 40px;
+        font-size: 28px;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 40px 2px;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
+    }
+}
+@media(max-width:415px){
+    header h1{
+        text-align: center;
+        margin: 0 18%;
+        padding: 10px 40px;
+        font-size: 28px;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 40px 50px;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
+    }
+}
+@media(max-width:375px){
+    header h1{
+        text-align: center;
+        margin: 0 30%;
+        padding: 10px 40px;
+        font-size: 28px;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 40px 30px;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
+    }
+}
+@media(max-width:360px){
+    header h1{
+        text-align: center;
+        margin: 0 15%;
+        padding: 10px 40px;
+        font-size: 28px;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 40px 20px;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
+    }
+}
+@media(max-width:320px){
+    header h1{
+        text-align: center;
+        margin: 0 30%;
+        padding: 10px 40px;
+        font-size: 28px;
+    }
+    .block{    
+        background: #e8e8e8;
+        text-align: center;
+        margin: 40px 0;
+        width: auto;
+        padding: 40px;
+        border-bottom: 6px solid #fed51b;
     }
 }
 
